@@ -46,12 +46,12 @@ cal.paint( // 캘린더 내부 생성
                 domain: [1, 3, 5, 7, 9], // 색의 범위를 어떻게 나눌것인지, 이 값과 range 조정에 따라서 value 값에 따른 색깔을 조정할 수 있음
             },
         },
-        domain: { // 굳이 신경 안써도 됨
-            type: 'month',
+        domain: { 
+            type: 'month', // 캘린더 위에 달 표시 Jan, Feb...
             gutter: 4,
-            label: { text: 'MMM', textAlign: 'start', position: 'top' },
+            label: { text: 'MMM', textAlign: 'start', position: 'top' }, // MMM은 월들의 앞자리 초성 EX) January면 Jan만, 월들의 칸의 앞부분, position은 제일 위
         },
-        subDomain: { type: 'ghDay', radius: 2, width: 11, height: 11, gutter: 4 },
+        subDomain: { type: 'ghDay', radius: 2, width: 11, height: 11, gutter: 4 }, // type을 제외하면 각각 칸의 테두리 모양과 칸들 사이의 간격
         itemSelector: '#ex-ghDay',
     },
     [
