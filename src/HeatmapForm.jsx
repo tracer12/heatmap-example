@@ -52,7 +52,7 @@ cal.paint( // 캘린더 내부 생성
             label: { text: 'MMM', textAlign: 'start', position: 'top' }, // MMM은 월들의 앞자리 초성 EX) January면 Jan만, 월들의 칸의 앞부분, position은 제일 위
         },
         subDomain: { type: 'ghDay', radius: 2, width: 11, height: 11, gutter: 4 }, // type을 제외하면 각각 칸의 테두리 모양과 칸들 사이의 간격
-        itemSelector: '#ex-ghDay',
+        itemSelector: '#ex-ghDay', // 여기서 지정해준id 값에 캘린더를 랜더링 함,104 번째 줄 
     },
     [
         [
